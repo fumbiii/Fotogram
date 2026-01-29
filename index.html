@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fotogram.css" />
+    <script src="christian-util.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section class="header-picture">
+        <img src="./img/Capa_1.svg" alt="Fotogram Logo" class="logo" />
+      </section>
+    </header>
+    <main>
+      <section class="headline-section">
+        <h1 class="headline">My personal Photo Gallery</h1>
+      </section>
+      <section class="photo-gallery">
+        <button class="photo-button" onclick="openDialog(0)">
+          <img
+            src="./img/photo_1.jpg"
+            alt="Galaxy Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(1)">
+          <img
+            src="./img/photo_2.jpg"
+            alt="Hurricane Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(2)">
+          <img
+            src="./img/photo_3.jpg"
+            alt="Kitten Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(3)">
+          <img
+            src="./img/photo_4.jpg"
+            alt="Landscape Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(4)">
+          <img
+            src="img/photo_5.jpg"
+            alt="Mountain Landscape Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(5)">
+          <img
+            src="./img/photo_6.jpg"
+            alt="Mountain Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(6)">
+          <img
+            src="./img/photo_7.jpg"
+            alt="Parrot Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(7)">
+          <img
+            src="./img/photo_8.jpg"
+            alt="Power Station Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(8)">
+          <img
+            src="./img/photo_9.jpg"
+            alt="Spider Image"
+            class="gallery-photo"
+          />
+        </button>
+        <button class="photo-button" onclick="openDialog(9)">
+          <img
+            src="img/photo_10.jpg"
+            alt="Zebras Image"
+            class="gallery-photo"
+          />
+        </button>
+      </section>
+      <dialog id="photo-dialog" aria-labelledby="dialog_text" aria-describedby="photo_counter_section" onclick="closeDialog()"> 
+        <section onclick="dialogWBubblingProtection(event)" class="dialog_section">
+        <header class="dialog_header">
+        <div class="close_button_section">
+          <div class="dialog_text_section" id="dialog_text">
+          </div>
+          <button onclick="closeDialog()" class="close-button" aria-label="Close the Dialog">
+            <img src="./img/close.png" alt="x for closing the image" onmousedown="changeBackgroundcolor_closeButton()" onmouseup="resetBackgroundcolor_closeButton()" />
+          </button>
+          </header>
+        </div>
+
+        <img src="" alt="" class="photo_open_dialog" id="dialog-photo" />
+        <footer class="dialog_footer">
+        <div class="next_previous-section">
+          <button onclick="next_image()" class="next-button" aria-label="Next Image" id="changeImage_nextButton">
+            <img src="./img/arrow.png" />
+          </button>
+        <div class="photo_counter_section" id="photo_counter_section">
+          <span id="photo_counter_text"> </span>
+        </div>
+          <button onclick="previous_image()" class="previous-button" aria-label="Previous Image" id="changeImage_previousButton">
+            <img src="./img/arrow.png" />
+          </button>
+        </div>
+        </footer>
+        </section>
+      </dialog>
+    </main>
+    <footer>
+      <p class="footer-text">
+        &copy; 2026 Christian Staubmann Fotogram <br />All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
