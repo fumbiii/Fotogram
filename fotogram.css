@@ -250,6 +250,10 @@ dialog:modal {
   .header-picture {
     padding-left:70px;
   }
+   #photo-dialog {
+    height: 90%;
+    max-height: 600px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -274,6 +278,10 @@ dialog:modal {
   .next_previous-section{
     width: 300px;
   }
+   #photo-dialog {
+    height: 90%;
+    max-height: 600px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -289,14 +297,28 @@ dialog:modal {
   .header-picture {
     padding-left:50px;
   }
+   #photo-dialog {
+    height: 90%;
+    max-height: 600px;
+  }
 }
 
 @media (max-width: 375px) {
    .dialog_section, .dialog_header, .close_button_section, .next_previous-section, .photo_open_dialog, .dialog_footer{
     width: 300px;
   }
+  .dialog_footer{
+    padding-top: 15px;
+  }
+  .dialog_header {
+    margin-bottom: 0px;
+  }
   .headline {
     font-size: 24px;
+  }
+   #photo-dialog {
+    height: 90%;
+    max-height: 600px;
   }
 }
 
@@ -310,6 +332,10 @@ dialog:modal {
   .next_previous-section{
     width: 270px;
   }
+   #photo-dialog {
+    height: 90%;
+    max-height: 600px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -322,5 +348,9 @@ dialog:modal {
   .header-picture {
     padding-left:0;
     justify-content: center;
+  }
+  #photo-dialog {
+    height: 90%;
+    max-height: 600px;
   }
 }
